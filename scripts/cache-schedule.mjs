@@ -33,6 +33,7 @@ await page.waitForTimeout(2000)
 // Serialize the filtered DOM: persist checkbox state, drop scripts, absolutize URLs.
 const { html, sheets } = await page.evaluate(() => {
   document.querySelectorAll('input[type=checkbox]').forEach(el => el.toggleAttribute('checked', el.checked))
+  document.querySelectorAll('.agenda-header').forEach(el => { el.textContent = 'FOSS4G NA 2026 Event Schedule' })
   document.querySelectorAll('script, noscript, iframe').forEach(el => el.remove())
   document.querySelectorAll('[src]').forEach(el => el.setAttribute('src', el.src))
   document.querySelectorAll('a[href]').forEach(el => { el.setAttribute('href', el.href); el.setAttribute('target', '_blank') })
