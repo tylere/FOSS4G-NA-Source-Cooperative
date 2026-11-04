@@ -153,13 +153,14 @@ Thank Anthony up front. The architecture, STS, viewer, BYOB and analytics slides
 </style>
 
 ---
+hideLogomark: true
+---
+
+<div class="w-[36%]">
 
 <p class="eyebrow">The problem</p>
 
 # <span class="whitespace-nowrap">Cloud-native</span> formats tackle the *how*.
-
-<div class="grid grid-cols-[1fr_1.3fr] gap-10 mt-6 h-95">
-<div>
 
 Read just what you need, in place, over HTTP. No download-everything-first.
 
@@ -170,8 +171,8 @@ Read just what you need, in place, over HTTP. No download-everything-first.
 
 </div>
 
-<LiveDemo src="/schedule-cloud-native.html" :scale="0.55" />
-
+<div class="absolute inset-y-0 right-0 w-[60%]">
+<LiveDemo class="h-full" src="/schedule-cloud-native.html" :scale="0.55" />
 </div>
 
 <style>
@@ -302,13 +303,14 @@ layout: center
 </style>
 
 ---
+hideLogomark: true
+---
+
+<div class="w-[36%]">
 
 <p class="eyebrow">Source Cooperative</p>
 
 # Publish data of any kind, at any scale
-
-<div class="grid grid-cols-[1fr_2fr] gap-6 h-100">
-<div>
 
 - Format and domain agnostic
 - On commodity object storage
@@ -316,12 +318,12 @@ layout: center
 
 </div>
 
-<DemoReel :demos="[
+<div class="absolute inset-y-0 right-0 w-[60%]">
+<DemoReel class="h-full" :demos="[
   { label: 'source.coop', src: 'https://source.coop/', scale: 0.5 },
   { label: 'Data.gov archive', src: 'https://source.coop/harvard-lil/gov-data', scale: 0.5 },
   { label: 'Smithsonian', src: 'https://source.coop/harvard-lil/smithsonian-open-access', scale: 0.5 },
 ]" />
-
 </div>
 
 ---
@@ -402,13 +404,14 @@ Each of these is a dataset you could use in a demo tomorrow.
 -->
 
 ---
+hideLogomark: true
+---
+
+<div class="w-[36%]">
 
 <p class="eyebrow">FAIR · Findable</p>
 
 # Every product has a home you can find
-
-<div class="grid grid-cols-[1fr_2fr] gap-6 h-100">
-<div>
 
 - A **stable URL** per product
 - Indexed by **Source Search** and **Google Dataset Search**
@@ -417,8 +420,8 @@ Each of these is a dataset you could use in a demo tomorrow.
 
 </div>
 
-<LiveDemo src="https://source.coop/source/metadata-catalog" :scale="0.5" url />
-
+<div class="absolute inset-y-0 right-0 w-[60%]">
+<LiveDemo class="h-full" src="https://source.coop/source/metadata-catalog" :scale="0.5" url />
 </div>
 
 <!--
@@ -477,36 +480,14 @@ From Anthony's proxy-rewrite slides. Bursty traffic: 20 to 5000 RPS.
 -->
 
 ---
-
-<p class="eyebrow">Accessible</p>
-
-# Bring your own bucket
-
-<div class="grid grid-cols-[1fr_2fr] gap-6 h-100">
-<div>
-
-- Register your own **S3**, **Azure** or **GCS** buckets
-- Get Source's viewers, auth and analytics on data you already host
-- The proxy sits in front of any S3-compatible storage, so the platform isn't captive to one vendor
-
-</div>
-
-<DemoReel :demos="[
-  { label: 'AWS S3', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--edit-with-stored-key&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
-  { label: 'Azure Blob Storage', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--azure&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
-  { label: 'GCS', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--google-cloud&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
-]" />
-
-</div>
-
+hideLogomark: true
 ---
+
+<div class="w-[36%]">
 
 <p class="eyebrow">For publishers</p>
 
 # Know who uses your data
-
-<div class="grid grid-cols-[1fr_2fr] gap-6 h-100">
-<div>
 
 Publishers want to know:
 
@@ -518,11 +499,35 @@ Publishers want to know:
 
 </div>
 
-<DemoReel :demos="[
+<div class="absolute inset-y-0 right-0 w-[60%]">
+<DemoReel class="h-full" :demos="[
   { label: 'Summary', src: 'https://ui.source.coop/iframe.html?id=features-product-page-analytics-usagepanel--high-volume&viewMode=story&globals=appearance%3Adark', scale: 1 },
   { label: 'Detailed', src: 'https://ui.source.coop/iframe.html?id=features-product-page-analytics-productanalyticsview--default&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
 ]" />
+</div>
 
+---
+hideLogomark: true
+---
+
+<div class="w-[36%]">
+
+<p class="eyebrow">Accessible</p>
+
+# Bring your own bucket
+
+- Register your own **S3**, **Azure** or **GCS** buckets
+- Get Source's viewers, auth and analytics on data you already host
+- The proxy sits in front of any S3-compatible storage, so the platform isn't captive to one vendor
+
+</div>
+
+<div class="absolute inset-y-0 right-0 w-[60%]">
+<DemoReel class="h-full" :demos="[
+  { label: 'AWS S3', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--edit-with-stored-key&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
+  { label: 'Azure Blob Storage', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--azure&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
+  { label: 'GCS', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--google-cloud&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
+]" />
 </div>
 
 ---
@@ -587,7 +592,7 @@ Convert traditional geospatial datasets into <span class="whitespace-nowrap">clo
 
 <p class="eyebrow">Governance</p>
 
-# Standards are the *how*. Source is the *where*, and *for how long*.
+# Why choose Source?
 
 <div class="grid grid-cols-3 gap-5 mt-8">
 <div class="card">
@@ -616,6 +621,11 @@ Open source software, open standard formats, stable URLs.
 <p class="mt-8 text-lg">Governance decides whether large open datasets survive. That's why publishers and users can trust that the data will stay accessible and durable.</p>
 
 ---
+hideLogomark: true
+---
+
+<div class="grid grid-cols-[1.7fr_1fr] gap-10 h-full items-center">
+<div>
 
 # Takeaways
 
@@ -625,26 +635,32 @@ Open source software, open standard formats, stable URLs.
   <div><h3>Portolan</h3><p>Convert traditional geospatial data to <span class="whitespace-nowrap">cloud-native</span> geospatial formats</p></div>
 </div>
 
-<style>
-.takeaways { margin-top: 2.25rem; display: flex; flex-direction: column; gap: 2.5rem; }
-.takeaways h3 { margin: 0 0 .3rem; font-size: 1.65rem; line-height: 1.3; font-weight: 700; }
-.takeaways p { margin: 0; font-size: 1.65rem; line-height: 1.3; }
-</style>
+</div>
+<div class="text-center">
 
----
-layout: center
-class: text-center
-hideLogomark: true
----
-
-<SourceLogo class="w-80 mx-auto mb-10" style="color: #EFEBEA" />
+<SourceLogo class="w-56 mx-auto mb-6" style="color: #EFEBEA" />
 
 # Thank you
 
 <p class="muted">Questions?</p>
 
-<div class="flex justify-center mt-6">
-  <DeckQRCode :size="140" />
+<p class="mono"><a href="mailto:hello@source.coop">hello@source.coop</a></p>
+
+<div class="flex justify-center mt-4">
+  <DeckQRCode :size="120" />
 </div>
 
 <p class="muted text-sm mt-2">These slides</p>
+
+</div>
+</div>
+
+<style>
+.takeaways { margin-top: 1.25rem; display: flex; flex-direction: column; gap: .8rem; }
+.takeaways > div {
+  background: var(--src-ink-2); border: 1px solid var(--src-line-dark); border-left: 3px solid var(--src-bone);
+  border-radius: 4px; padding: .75rem 1.25rem;
+}
+.takeaways h3 { margin: 0 0 .25rem; font-size: 1.15rem; line-height: 1.3; font-weight: 700; }
+.takeaways p { margin: 0; font-size: 1.15rem; line-height: 1.35; }
+</style>
