@@ -318,7 +318,8 @@ hideLogomark: true
 
 </div>
 
-<div class="absolute inset-y-0 right-0 w-[60%]">
+<!-- The deck's dark color-scheme is inherited by embedded pages; pin them to light. -->
+<div class="absolute inset-y-0 right-0 w-[60%]" style="color-scheme: light;">
 <DemoReel class="h-full" :demos="[
   { label: 'source.coop', src: 'https://source.coop/', scale: 0.5 },
   { label: 'Data.gov archive', src: 'https://source.coop/harvard-lil/gov-data', scale: 0.5 },
@@ -388,7 +389,7 @@ hideLogomark: true
 
 </div>
 
-<div class="absolute inset-y-0 right-0 w-[60%]">
+<div class="absolute inset-y-0 right-0 w-[60%]" style="color-scheme: light;">
 <DemoReel class="h-full" :demos="[
   { label: 'Parquet', src: 'https://source.coop/giswqs/nwi/wetlands/AK_Wetlands.parquet', scale: 0.6 },
   { label: 'STAC',    src: 'https://source.coop/wildland-almanac/california/catalog.json', scale: 0.6 },
@@ -420,7 +421,7 @@ hideLogomark: true
 
 </div>
 
-<div class="absolute inset-y-0 right-0 w-[60%]">
+<div class="absolute inset-y-0 right-0 w-[60%]" style="color-scheme: light;">
 <LiveDemo class="h-full" src="https://source.coop/source/metadata-catalog" :scale="0.5" url />
 </div>
 
@@ -499,10 +500,10 @@ Publishers want to know:
 
 </div>
 
-<div class="absolute inset-y-0 right-0 w-[60%]">
+<div class="absolute inset-y-0 right-0 w-[60%]" style="color-scheme: light;">
 <DemoReel class="h-full" :demos="[
-  { label: 'Summary', src: 'https://ui.source.coop/iframe.html?id=features-product-page-analytics-usagepanel--high-volume&viewMode=story&globals=appearance%3Adark', scale: 1 },
-  { label: 'Detailed', src: 'https://ui.source.coop/iframe.html?id=features-product-page-analytics-productanalyticsview--default&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
+  { label: 'Summary', src: 'https://ui.source.coop/iframe.html?id=features-product-page-analytics-usagepanel--high-volume&viewMode=story&globals=appearance%3Alight', scale: 0.6 },
+  { label: 'Detailed', src: 'https://ui.source.coop/iframe.html?id=features-product-page-analytics-productanalyticsview--default&viewMode=story&globals=appearance%3Alight', scale: 0.6 },
 ]" />
 </div>
 
@@ -522,11 +523,11 @@ hideLogomark: true
 
 </div>
 
-<div class="absolute inset-y-0 right-0 w-[60%]">
+<div class="absolute inset-y-0 right-0 w-[60%]" style="color-scheme: light;">
 <DemoReel class="h-full" :demos="[
-  { label: 'AWS S3', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--edit-with-stored-key&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
-  { label: 'Azure Blob Storage', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--azure&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
-  { label: 'GCS', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--google-cloud&viewMode=story&globals=appearance%3Adark', scale: 0.6 },
+  { label: 'AWS S3', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--edit-with-stored-key&viewMode=story&globals=appearance%3Alight', scale: 0.6 },
+  { label: 'Azure Blob Storage', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--azure&viewMode=story&globals=appearance%3Alight', scale: 0.6 },
+  { label: 'GCS', src: 'https://ui.source.coop/iframe.html?id=features-settings-data-connections-dataconnectionform--google-cloud&viewMode=story&globals=appearance%3Alight', scale: 0.6 },
 ]" />
 </div>
 
@@ -569,6 +570,30 @@ hideLogomark: true
 
 <div class="w-[36%]">
 
+<p class="eyebrow">Open source</p>
+
+# Source Cooperative is open source
+
+The platform, the data proxy and the format viewers are developed in the open on GitHub.
+
+<p class="mono text-sm mt-6"><a href="https://github.com/orgs/source-cooperative/repositories">github.com/source-cooperative</a></p>
+
+</div>
+
+<a class="absolute inset-y-0 right-0 w-[60%] block overflow-hidden rounded-l" style="border: 1px solid var(--src-line-dark); border-right: 0;" href="https://github.com/orgs/source-cooperative/repositories" target="_blank">
+  <img src="/github-source-cooperative-repos.png" class="w-full h-full object-cover object-left-top" alt="Source Cooperative repositories on GitHub" />
+</a>
+
+<!--
+Screenshot of github.com/orgs/source-cooperative/repositories, taken Nov 4, 2026 (GitHub doesn't allow iframing).
+-->
+
+---
+hideLogomark: true
+---
+
+<div class="w-[36%]">
+
 <p class="eyebrow">Data conversion</p>
 
 # Portolan
@@ -587,6 +612,32 @@ Convert traditional geospatial datasets into <span class="whitespace-nowrap">clo
 <div class="absolute inset-y-0 right-0 w-[60%]">
 <LiveDemo class="h-full" src="https://www.portolan-sdi.org/" :scale="0.5" url />
 </div>
+
+---
+hideLogomark: true
+---
+
+<div class="w-[36%]">
+
+<p class="eyebrow">Portolan</p>
+
+# Request a dataset
+
+Open a GitHub issue naming the dataset, its publisher, source and license.
+
+Example: **OpenElections**, US election results, requested for US election data analysis.
+
+<p class="mono text-sm mt-6"><a href="https://github.com/portolan-sdi/portolan-data/issues/78">portolan-data/issues/78</a></p>
+
+</div>
+
+<a class="absolute inset-y-0 right-0 w-[60%] block overflow-hidden rounded-l" style="border: 1px solid var(--src-line-dark); border-right: 0;" href="https://github.com/portolan-sdi/portolan-data/issues/78" target="_blank">
+  <img src="/portolan-data-issue-78.png" class="w-full h-full object-cover object-left-top" alt="Portolan dataset request for OpenElections on GitHub" />
+</a>
+
+<!--
+Screenshot of github.com/portolan-sdi/portolan-data/issues/78, taken Nov 4, 2026 (GitHub doesn't allow iframing).
+-->
 
 ---
 
