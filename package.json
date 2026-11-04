@@ -1,0 +1,24 @@
+{
+  "name": "foss4g-na-2026-source-cooperative",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open=false",
+    "build": "slidev build",
+    "export": "slidev export",
+    "cache-schedule": "node scripts/cache-schedule.mjs"
+  },
+  "dependencies": {
+    "@alukach/slidev-addon-laser": "^0.1.0",
+    "@alukach/slidev-addon-live-demo": "^0.1.0",
+    "@alukach/slidev-addon-qrcode": "^0.1.0",
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "^0.25.0",
+    "slidev-addon-source": "link:../../radiantearth/re-branding/slidev/slidev-theme-source",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "playwright-chromium": "^1.64.1"
+  }
+}
