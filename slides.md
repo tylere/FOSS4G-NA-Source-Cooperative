@@ -698,7 +698,7 @@ hideLogomark: true
 <p class="mono"><a href="mailto:hello@source.coop">hello@source.coop</a></p>
 
 <div class="flex justify-center mt-4">
-  <DeckQRCode :size="120" />
+  <DeckQRCode url="https://tylere.github.io/FOSS4G-NA-Source-Cooperative/" :size="120" />
 </div>
 
 <p class="muted text-sm mt-2">These slides</p>
