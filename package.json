@@ -18,7 +18,11 @@
     "vue": "^3.5.0"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.2.29",
+    "@iconify-json/ph": "^1.2.2",
+    "@iconify-json/svg-spinners": "^1.2.4",
     "esbuild": "^0.28.2",
-    "playwright-chromium": "^1.64.1"
+    "playwright-chromium": "^1.64.1",
+    "unocss": "66.11.0"
   }
 }
